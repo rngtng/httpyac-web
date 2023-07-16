@@ -1,0 +1,20 @@
+{
+  "name": "webcontainers-api-starter",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.4.4",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@webcontainer/api": "^1.1.3",
+    "httpyac": "latest"
+  }
+}
