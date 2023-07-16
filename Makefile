@@ -7,11 +7,10 @@ update:
 	docker run -it --rm --pull always -v $(CURDIR):/data --entrypoint npm ghcr.io/anweber/httpyac update
 
 dev2:
-	docker run -it --rm --pull always -v $(CURDIR):/data --entrypoint bash ghcr.io/anweber/httpyac
-
+	docker run -it --rm --pull always -u root -v $(CURDIR):/data --entrypoint bash ghcr.io/anweber/httpyac
 
 dev:
-	docker run -it --rm --pull always -v $(CURDIR):/data --entrypoint bash node
+	docker run -it --rm --pull always -w /data -u root -v $(CURDIR):/data --entrypoint bash node
 
 
 clean:
