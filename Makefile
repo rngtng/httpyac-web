@@ -12,9 +12,5 @@ dev2:
 dev:
 	docker run -it --rm --pull always -w /data -u root -v $(CURDIR):/data --entrypoint bash node
 
-
 clean:
 	rm -rf node_modules/
-
-release:
-	cp dist/* docs

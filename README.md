@@ -1,13 +1,20 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 HTTPYAC WEB
 
-This project has been created using **webpack-cli**, you can now run
+[POC] Run httpyac in any browser
+
+
+
+### Development
 
 ```
+make dev
 npm run build
 ```
 
-to bundle your application
+to bundle application
 
 
+### Resources
 
-https://webcontainers.io/guides/quickstart
+- https://webcontainers.io/guides/quickstart
+- https://dev.to/stefnotch/enabling-coop-coep-without-touching-the-server-2d3n
