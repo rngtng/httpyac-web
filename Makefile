@@ -15,3 +15,6 @@ dev:
 
 clean:
 	rm -rf node_modules/
+
+release:
+	cp dist/* docs
