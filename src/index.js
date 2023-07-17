@@ -42,12 +42,14 @@ async function installDependencies() {
 //  */
 async function writeIndexJS(content) {
   await webcontainerInstance.fs.writeFile('/get.http', content);
-  textareaOutEl.value = "";
+  var output = "";
+  textareaOutEl.value = "Executing";
   const installProcess = await webcontainerInstance.spawn('httpyac', ['get.http', '-a', '-o none']);
   installProcess.output.pipeTo(
     new WritableStream({
       write(data) {
-        textareaOutEl.value += data;
+        output += data;
+        textareaOutEl.value = output;
       },
     })
   );
